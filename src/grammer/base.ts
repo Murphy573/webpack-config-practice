@@ -45,4 +45,8 @@ export default function () {
     let {first, ...others} = {first: 1, a: 2, c: 3};
 }
 
+type a = string;
+let s: a = '123';
+console.log(s);
+
 //export default a = 1;//一个文件只能存在一个default

@@ -9,7 +9,7 @@ class Car implements ICar{
 }
 
 //不使用接口
-function start(obj: Car){
+export function start(obj: Car){
     obj.move();
 }
 start(new Car());

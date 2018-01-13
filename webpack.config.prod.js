@@ -23,7 +23,7 @@ module.exports = {
 		//tree_index: './src/tree/tree_index.ts',
 		//rx_index: './src/ES6/rxjs/rx_index.js',
 		//css_index: './src/styles/specials/sp-1.scss'
-		vendors: [ 'jquery', 'rxjs', 'moment', 'md5' ],
+		//vendors: [ 'jquery', 'rxjs', 'moment', 'md5' ],
 		vendor1: [ 'jquery', 'rxjs' ],
 		vendor2: [ 'moment', 'md5' ]
 	},
@@ -65,7 +65,7 @@ module.exports = {
 			}
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
-			names: [ 'vendor1', 'vendor2' ], // 公共代码的chunk名为'vendors'
+			names: [ 'vendor1', 'vendor2', 'mainfest'], // 公共代码的chunk名为'vendors'
 			filename: '[name].bundle.js', // 生成后的文件名，虽说用了[name]，但实际上就是'vendors.bundle.js'了
 			//minChunks: 3, // 设定要有3个chunk（即3个页面）加载的js模块才会被纳入公共代码
 		}),
