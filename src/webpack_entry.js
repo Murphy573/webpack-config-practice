@@ -7,7 +7,6 @@ import MD5 from 'md5';
 //const moment = require('moment');
 //const MD5 = require('md5');
 
-debugger;
 let _d = moment();
 console.log(_d.format('YYYY-MM-DD'));
 console.log('admin加密后==>' + MD5('admin'));

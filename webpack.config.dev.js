@@ -55,8 +55,10 @@ module.exports = {
 	},
 	output: {//输出
 		filename: '[name].js',//输出文件名
+		//filename: '[chunkhash].js'
 		path: path.resolve(__dirname, './built'),//输出路径
 		chunkFilename: './require/[name].js' // 设置require.ensure 文件名
+		//chunkFilename: './require/[chunkhash].js'
 	},
 	plugins: [
 		extractSass,
