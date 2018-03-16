@@ -67,7 +67,7 @@ merged$.subscribe(observer);
 
 
 //
-let _operatorsUse = Rx.Observable.interval(1000)
+let _operatorsUse = Rx.Observable.interval(1000).take(5)
 					.filter(v => v % 2 === 0)
 					.debounceTime(2000)
 					.subscribe(( v ) => {

@@ -1,3 +1,5 @@
+import { ClassDecorator }           from "../decorator/common";
+
 ;
 import {People, Animals} from "./class";
 
@@ -6,7 +8,11 @@ import {People, Animals} from "./class";
  * private: 只能在声明类的内部访问，他的实例化对象也无法访问
  * protected: 只能在声明类的内部或者他的子类内部访问
  * */
-
+@ClassDecorator({
+    imports: [1,2,3],
+    exports: [1,2,3],
+    providers: ['provide1', 'provide2', 'provide3']
+})
 class Student extends People {
     private _sex: string;//私有属性：只能在当前类内部访问,可以通过设置get&set进行修改和访问
     protected readonly stage: string;//只读属性

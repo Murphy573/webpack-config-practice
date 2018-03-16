@@ -3,7 +3,8 @@
     "outDir": "./built",
     "sourceMap": true,
     "allowJs": true,
-    "target": "es2016"
+    "target": "es2016",
+    "experimentalDecorators": true
   },
   "include": [
     "./src/**/*"

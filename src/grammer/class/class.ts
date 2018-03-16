@@ -1,5 +1,4 @@
-;
-import {IPeople} from 'interface';
+import {IPeople} from "../interface";
 
 class People implements IPeople {
     static type: string = 'People';

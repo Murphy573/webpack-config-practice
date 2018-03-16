@@ -1,24 +1,23 @@
-import {label, labelNumber, a as aa} from './grammer/interface';
-import func from './grammer/base';
-import {People} from './grammer/class/class';
-import {Student, Mouse} from './grammer/class/subclass';
-import * as identity from './grammer/generic';
-import MyNameSpace from './grammer/namespace';
-import myAdd from './grammer/function';
-import anyprops from './grammer/interface/implements';
-import {TestSetterAndGetter} from "./grammer/class/setter&getter";
-
+import { label, labelNumber, a as aa } from './grammer/interface';
+import func                            from './grammer/base';
+import { People }                      from './grammer/class/class';
+import { Student, Mouse }              from './grammer/class/subclass';
+import * as identity                   from './grammer/generic';
+import MyNameSpace                     from './grammer/namespace';
+import myAdd                           from './grammer/function';
+import anyprops                        from './grammer/interface/implements';
+import { TestSetterAndGetter }         from "./grammer/class/setter&getter";
 console.log('开始学习ts!!!');
 
 let a: label = {
-    label: 'a'
+	label: 'a'
 };
 let b: labelNumber = {
-    label: 1,
-    count: 3,
-    cons(a: number, b: string, c?: Date) {
-        console.log(a + b + 'print at' + c);
-    }
+	label: 1,
+	count: 3,
+	cons ( a: number, b: string, c?: Date ) {
+		console.log(a + b + 'print at' + c);
+	}
 };
 b.cons(1, '2', new Date());
 console.log(a, b, aa);
@@ -50,8 +49,8 @@ myAdd(1, 2);
 console.log(anyprops);
 
 {
-    let _t = new TestSetterAndGetter();
-    _t.name = 'admin';
-    _t.name = 'admin1';
-    console.log(_t.name);
+	let _t = new TestSetterAndGetter();
+	_t.name = 'admin';
+	_t.name = 'admin1';
+	console.log(_t.name);
 }

@@ -19,7 +19,7 @@ const extractSass = new ExtractTextPlugin({
 module.exports = {
 	entry: {
 		webpack_entry: './src/webpack_entry.js',
-		//main_index: './src/index.ts',
+		main_index: './src/index.ts',
 		//tree_index: './src/tree/tree_index.ts',
 		//rx_index: './src/ES6/rxjs/rx_index.js',
 		//css_index: './src/styles/specials/sp-1.scss'

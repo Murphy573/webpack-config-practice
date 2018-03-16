@@ -39,6 +39,27 @@ function add(x): any {
     }
 }
 
+function load(datas: any[], condition?: any) {
+    let _count = 0;
+    const _MAX = datas.length;
+
+    let _load = function() {
+        setTimeout(() => {
+			console.log(`${_count} loaded`);
+            if(_count < _MAX - 1){
+				_count++;
+				_load();
+            }
+        }, 2000);
+    };
+
+    if(_MAX) {
+		_load()
+    }
+}
+
+load([1,2,3,4,5,6]);
+
 add(1, 2);
 add('s');
 export default myAdd;
